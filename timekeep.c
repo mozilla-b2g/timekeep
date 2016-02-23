@@ -30,6 +30,7 @@
  */
 
 #include <stdlib.h>
+#include <string.h>
 #include <fcntl.h>
 
 #include <sys/time.h>
@@ -38,6 +39,7 @@
 
 #include <cutils/properties.h>
 #include <cutils/log.h>
+#include <errno.h>
 
 #define RTC_SYS_FILE "/sys/class/rtc/rtc0/since_epoch"
 #define TIME_ADJUST_PROP "persist.sys.timeadjust"
